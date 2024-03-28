@@ -63,6 +63,16 @@ namespace BanNuoc.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pexels_alleksana_7430733 {
+            get {
+                object obj = ResourceManager.GetObject("pexels-alleksana-7430733", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pexels_magda_ehlers_1337380 {
             get {
                 object obj = ResourceManager.GetObject("pexels-magda-ehlers-1337380", resourceCulture);
