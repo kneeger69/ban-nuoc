@@ -11,5 +11,17 @@ namespace BanNuoc
         {
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGuest_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Bangdieukhien ds = new Bangdieukhien("Guest");
+            ds.Show();
+            this.Hide();
+        }
     }
 }
