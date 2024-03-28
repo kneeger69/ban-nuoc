@@ -57,11 +57,10 @@
             pictureBox1.Image = Properties.Resources.pexels_magda_ehlers_1337380;
             pictureBox1.Location = new Point(0, -14);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(466, 303);
+            pictureBox1.Size = new Size(466, 318);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
             // 
             // label1
             // 
@@ -136,6 +135,7 @@
             btnLogin.Size = new Size(153, 48);
             btnLogin.TabIndex = 5;
             btnLogin.Text = "Đăng nhập";
+            btnLogin.Click += btnLogin_Click;
             // 
             // label2
             // 
@@ -155,13 +155,13 @@
             btnGuest.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnGuest.LinkBehavior = LinkBehavior.HoverUnderline;
             btnGuest.LinkColor = Color.CornflowerBlue;
-            btnGuest.Location = new Point(125, 605);
+            btnGuest.Location = new Point(127, 598);
             btnGuest.Name = "btnGuest";
             btnGuest.Size = new Size(199, 25);
             btnGuest.TabIndex = 7;
             btnGuest.TabStop = true;
             btnGuest.Text = "Khách hàng đăng nhập";
-            btnGuest.LinkClicked += btnGuest_LinkClicked;
+            btnGuest.LinkClicked += btnGuest_LinkClicked_1;
             // 
             // Form1
             // 
