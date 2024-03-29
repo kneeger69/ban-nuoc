@@ -55,21 +55,24 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.pexels_magda_ehlers_1337380;
-            pictureBox1.Location = new Point(0, -14);
+            pictureBox1.Location = new Point(0, -18);
+            pictureBox1.Margin = new Padding(4, 4, 4, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(466, 318);
+            pictureBox1.Size = new Size(582, 398);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(33, 307);
+            label1.Location = new Point(41, 384);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(83, 23);
+            label1.Size = new Size(104, 30);
             label1.TabIndex = 1;
             label1.Text = "Tài khoản";
             // 
@@ -84,14 +87,14 @@
             txtUsername.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtUsername.Font = new Font("Segoe UI", 11F);
             txtUsername.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtUsername.Location = new Point(33, 335);
-            txtUsername.Margin = new Padding(4, 5, 4, 5);
+            txtUsername.Location = new Point(41, 419);
+            txtUsername.Margin = new Padding(5, 6, 5, 6);
             txtUsername.Name = "txtUsername";
             txtUsername.PasswordChar = '\0';
             txtUsername.PlaceholderText = "";
             txtUsername.SelectedText = "";
             txtUsername.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            txtUsername.Size = new Size(390, 50);
+            txtUsername.Size = new Size(488, 62);
             txtUsername.TabIndex = 3;
             // 
             // txtPassword
@@ -105,14 +108,14 @@
             txtPassword.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtPassword.Font = new Font("Segoe UI", 11F);
             txtPassword.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtPassword.Location = new Point(33, 441);
-            txtPassword.Margin = new Padding(4, 5, 4, 5);
+            txtPassword.Location = new Point(41, 551);
+            txtPassword.Margin = new Padding(5, 6, 5, 6);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
             txtPassword.PlaceholderText = "";
             txtPassword.SelectedText = "";
             txtPassword.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            txtPassword.Size = new Size(390, 50);
+            txtPassword.Size = new Size(488, 62);
             txtPassword.TabIndex = 4;
             // 
             // btnLogin
@@ -129,10 +132,11 @@
             btnLogin.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnLogin.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             btnLogin.ForeColor = Color.White;
-            btnLogin.Location = new Point(149, 536);
+            btnLogin.Location = new Point(186, 670);
+            btnLogin.Margin = new Padding(4, 4, 4, 4);
             btnLogin.Name = "btnLogin";
             btnLogin.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            btnLogin.Size = new Size(153, 48);
+            btnLogin.Size = new Size(191, 60);
             btnLogin.TabIndex = 5;
             btnLogin.Text = "Đăng nhập";
             btnLogin.Click += btnLogin_Click;
@@ -142,9 +146,10 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             label2.ForeColor = SystemColors.ButtonHighlight;
-            label2.Location = new Point(32, 413);
+            label2.Location = new Point(40, 516);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(84, 23);
+            label2.Size = new Size(103, 30);
             label2.TabIndex = 6;
             label2.Text = "Mật khẩu";
             // 
@@ -155,9 +160,10 @@
             btnGuest.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnGuest.LinkBehavior = LinkBehavior.HoverUnderline;
             btnGuest.LinkColor = Color.CornflowerBlue;
-            btnGuest.Location = new Point(127, 598);
+            btnGuest.Location = new Point(159, 748);
+            btnGuest.Margin = new Padding(4, 0, 4, 0);
             btnGuest.Name = "btnGuest";
-            btnGuest.Size = new Size(199, 25);
+            btnGuest.Size = new Size(241, 30);
             btnGuest.TabIndex = 7;
             btnGuest.TabStop = true;
             btnGuest.Text = "Khách hàng đăng nhập";
@@ -165,10 +171,10 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(458, 659);
+            ClientSize = new Size(572, 824);
             Controls.Add(btnGuest);
             Controls.Add(label2);
             Controls.Add(btnLogin);
@@ -177,6 +183,7 @@
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4, 4, 4, 4);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";

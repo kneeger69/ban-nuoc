@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges32 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges33 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges34 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges35 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges37 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges38 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges39 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
             btnLogout = new LinkLabel();
             guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
@@ -71,10 +71,12 @@
             panel1.Controls.Add(btnAdditems);
             panel1.Controls.Add(btnGuestinfo);
             panel1.Controls.Add(btnPlaceorder);
-            panel1.Location = new Point(16, 19);
+            panel1.Location = new Point(20, 24);
+            panel1.Margin = new Padding(4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(286, 554);
+            panel1.Size = new Size(358, 692);
             panel1.TabIndex = 0;
+            panel1.Paint += panel1_Paint;
             // 
             // btnLogout
             // 
@@ -83,9 +85,10 @@
             btnLogout.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnLogout.LinkBehavior = LinkBehavior.HoverUnderline;
             btnLogout.LinkColor = Color.Plum;
-            btnLogout.Location = new Point(14, 516);
+            btnLogout.Location = new Point(18, 645);
+            btnLogout.Margin = new Padding(4, 0, 4, 0);
             btnLogout.Name = "btnLogout";
-            btnLogout.Size = new Size(100, 25);
+            btnLogout.Size = new Size(120, 30);
             btnLogout.TabIndex = 8;
             btnLogout.TabStop = true;
             btnLogout.Text = "Đăng xuất";
@@ -100,7 +103,7 @@
             guna2Button4.CheckedState.CustomBorderColor = Color.White;
             guna2Button4.CheckedState.FillColor = Color.White;
             guna2Button4.CheckedState.ForeColor = Color.FromArgb(0, 118, 220);
-            guna2Button4.CustomizableEdges = customizableEdges1;
+            guna2Button4.CustomizableEdges = customizableEdges27;
             guna2Button4.DisabledState.BorderColor = Color.DarkGray;
             guna2Button4.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button4.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -108,10 +111,11 @@
             guna2Button4.FillColor = Color.FromArgb(0, 118, 200);
             guna2Button4.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             guna2Button4.ForeColor = Color.White;
-            guna2Button4.Location = new Point(41, 65);
+            guna2Button4.Location = new Point(51, 81);
+            guna2Button4.Margin = new Padding(4);
             guna2Button4.Name = "guna2Button4";
-            guna2Button4.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2Button4.Size = new Size(277, 51);
+            guna2Button4.ShadowDecoration.CustomizableEdges = customizableEdges28;
+            guna2Button4.Size = new Size(346, 64);
             guna2Button4.TabIndex = 7;
             guna2Button4.Text = "Danh mục đồ uống";
             // 
@@ -125,10 +129,11 @@
             btnExit.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnExit.ForeColor = Color.White;
             btnExit.Location = new Point(0, 0);
+            btnExit.Margin = new Padding(4);
             btnExit.Name = "btnExit";
-            btnExit.ShadowDecoration.CustomizableEdges = customizableEdges3;
+            btnExit.ShadowDecoration.CustomizableEdges = customizableEdges29;
             btnExit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            btnExit.Size = new Size(40, 40);
+            btnExit.Size = new Size(50, 50);
             btnExit.TabIndex = 6;
             btnExit.Text = "X";
             btnExit.Click += btnExit_Click;
@@ -142,7 +147,7 @@
             btnDeleteitems.CheckedState.CustomBorderColor = Color.White;
             btnDeleteitems.CheckedState.FillColor = Color.White;
             btnDeleteitems.CheckedState.ForeColor = Color.FromArgb(0, 118, 220);
-            btnDeleteitems.CustomizableEdges = customizableEdges4;
+            btnDeleteitems.CustomizableEdges = customizableEdges30;
             btnDeleteitems.DisabledState.BorderColor = Color.DarkGray;
             btnDeleteitems.DisabledState.CustomBorderColor = Color.DarkGray;
             btnDeleteitems.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -150,10 +155,11 @@
             btnDeleteitems.FillColor = Color.FromArgb(0, 118, 200);
             btnDeleteitems.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             btnDeleteitems.ForeColor = Color.White;
-            btnDeleteitems.Location = new Point(41, 433);
+            btnDeleteitems.Location = new Point(51, 541);
+            btnDeleteitems.Margin = new Padding(4);
             btnDeleteitems.Name = "btnDeleteitems";
-            btnDeleteitems.ShadowDecoration.CustomizableEdges = customizableEdges5;
-            btnDeleteitems.Size = new Size(277, 51);
+            btnDeleteitems.ShadowDecoration.CustomizableEdges = customizableEdges31;
+            btnDeleteitems.Size = new Size(346, 64);
             btnDeleteitems.TabIndex = 5;
             btnDeleteitems.Text = "Xóa";
             // 
@@ -166,7 +172,7 @@
             btnUpdateitems.CheckedState.CustomBorderColor = Color.White;
             btnUpdateitems.CheckedState.FillColor = Color.White;
             btnUpdateitems.CheckedState.ForeColor = Color.FromArgb(0, 118, 220);
-            btnUpdateitems.CustomizableEdges = customizableEdges6;
+            btnUpdateitems.CustomizableEdges = customizableEdges32;
             btnUpdateitems.DisabledState.BorderColor = Color.DarkGray;
             btnUpdateitems.DisabledState.CustomBorderColor = Color.DarkGray;
             btnUpdateitems.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -174,10 +180,11 @@
             btnUpdateitems.FillColor = Color.FromArgb(0, 118, 200);
             btnUpdateitems.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             btnUpdateitems.ForeColor = Color.White;
-            btnUpdateitems.Location = new Point(41, 357);
+            btnUpdateitems.Location = new Point(51, 446);
+            btnUpdateitems.Margin = new Padding(4);
             btnUpdateitems.Name = "btnUpdateitems";
-            btnUpdateitems.ShadowDecoration.CustomizableEdges = customizableEdges7;
-            btnUpdateitems.Size = new Size(277, 51);
+            btnUpdateitems.ShadowDecoration.CustomizableEdges = customizableEdges33;
+            btnUpdateitems.Size = new Size(346, 64);
             btnUpdateitems.TabIndex = 4;
             btnUpdateitems.Text = "Sửa";
             // 
@@ -190,7 +197,7 @@
             btnAdditems.CheckedState.CustomBorderColor = Color.White;
             btnAdditems.CheckedState.FillColor = Color.White;
             btnAdditems.CheckedState.ForeColor = Color.FromArgb(0, 118, 220);
-            btnAdditems.CustomizableEdges = customizableEdges8;
+            btnAdditems.CustomizableEdges = customizableEdges34;
             btnAdditems.DisabledState.BorderColor = Color.DarkGray;
             btnAdditems.DisabledState.CustomBorderColor = Color.DarkGray;
             btnAdditems.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -198,10 +205,11 @@
             btnAdditems.FillColor = Color.FromArgb(0, 118, 200);
             btnAdditems.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             btnAdditems.ForeColor = Color.White;
-            btnAdditems.Location = new Point(41, 289);
+            btnAdditems.Location = new Point(51, 361);
+            btnAdditems.Margin = new Padding(4);
             btnAdditems.Name = "btnAdditems";
-            btnAdditems.ShadowDecoration.CustomizableEdges = customizableEdges9;
-            btnAdditems.Size = new Size(277, 51);
+            btnAdditems.ShadowDecoration.CustomizableEdges = customizableEdges35;
+            btnAdditems.Size = new Size(346, 64);
             btnAdditems.TabIndex = 3;
             btnAdditems.Text = "Thêm";
             // 
@@ -214,7 +222,7 @@
             btnGuestinfo.CheckedState.CustomBorderColor = Color.White;
             btnGuestinfo.CheckedState.FillColor = Color.White;
             btnGuestinfo.CheckedState.ForeColor = Color.FromArgb(0, 118, 220);
-            btnGuestinfo.CustomizableEdges = customizableEdges10;
+            btnGuestinfo.CustomizableEdges = customizableEdges36;
             btnGuestinfo.DisabledState.BorderColor = Color.DarkGray;
             btnGuestinfo.DisabledState.CustomBorderColor = Color.DarkGray;
             btnGuestinfo.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -222,10 +230,11 @@
             btnGuestinfo.FillColor = Color.FromArgb(0, 118, 200);
             btnGuestinfo.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             btnGuestinfo.ForeColor = Color.White;
-            btnGuestinfo.Location = new Point(41, 210);
+            btnGuestinfo.Location = new Point(51, 262);
+            btnGuestinfo.Margin = new Padding(4);
             btnGuestinfo.Name = "btnGuestinfo";
-            btnGuestinfo.ShadowDecoration.CustomizableEdges = customizableEdges11;
-            btnGuestinfo.Size = new Size(277, 51);
+            btnGuestinfo.ShadowDecoration.CustomizableEdges = customizableEdges37;
+            btnGuestinfo.Size = new Size(346, 64);
             btnGuestinfo.TabIndex = 1;
             btnGuestinfo.Text = "Thông tin khách hàng";
             // 
@@ -238,7 +247,7 @@
             btnPlaceorder.CheckedState.CustomBorderColor = Color.White;
             btnPlaceorder.CheckedState.FillColor = Color.White;
             btnPlaceorder.CheckedState.ForeColor = Color.FromArgb(0, 118, 220);
-            btnPlaceorder.CustomizableEdges = customizableEdges12;
+            btnPlaceorder.CustomizableEdges = customizableEdges38;
             btnPlaceorder.DisabledState.BorderColor = Color.DarkGray;
             btnPlaceorder.DisabledState.CustomBorderColor = Color.DarkGray;
             btnPlaceorder.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -246,10 +255,11 @@
             btnPlaceorder.FillColor = Color.FromArgb(0, 118, 200);
             btnPlaceorder.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             btnPlaceorder.ForeColor = Color.White;
-            btnPlaceorder.Location = new Point(41, 136);
+            btnPlaceorder.Location = new Point(51, 170);
+            btnPlaceorder.Margin = new Padding(4);
             btnPlaceorder.Name = "btnPlaceorder";
-            btnPlaceorder.ShadowDecoration.CustomizableEdges = customizableEdges13;
-            btnPlaceorder.Size = new Size(277, 51);
+            btnPlaceorder.ShadowDecoration.CustomizableEdges = customizableEdges39;
+            btnPlaceorder.Size = new Size(346, 64);
             btnPlaceorder.TabIndex = 0;
             btnPlaceorder.Text = "In hóa đơn";
             // 
@@ -257,18 +267,21 @@
             // 
             panel2.BackColor = SystemColors.ButtonFace;
             panel2.Controls.Add(uC_Welcome1);
-            panel2.Location = new Point(308, 19);
+            panel2.Location = new Point(385, 24);
+            panel2.Margin = new Padding(4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(690, 554);
+            panel2.Size = new Size(862, 692);
             panel2.TabIndex = 1;
             // 
             // uC_Welcome1
             // 
             uC_Welcome1.BackColor = Color.FromArgb(221, 217, 214);
-            uC_Welcome1.Location = new Point(0, -7);
+            uC_Welcome1.Location = new Point(0, -9);
+            uC_Welcome1.Margin = new Padding(5);
             uC_Welcome1.Name = "uC_Welcome1";
-            uC_Welcome1.Size = new Size(862, 692);
+            uC_Welcome1.Size = new Size(1078, 865);
             uC_Welcome1.TabIndex = 0;
+            uC_Welcome1.Load += uC_Welcome1_Load_1;
             // 
             // guna2Elipse1
             // 
@@ -287,13 +300,14 @@
             // 
             // Bangdieukhien
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(0, 118, 225);
-            ClientSize = new Size(1024, 601);
+            ClientSize = new Size(1280, 751);
             Controls.Add(panel2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4);
             Name = "Bangdieukhien";
             Text = "Bangdieukhien";
             Load += Bangdieukhien_Load;

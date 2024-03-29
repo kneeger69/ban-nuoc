@@ -25,7 +25,7 @@ namespace BanNuoc
                 bdk.Show();
                 this.Hide();
             }
-            else if(txtUsername.Text =="staff123" && txtPassword.Text == "123456")
+            else if (txtUsername.Text == "staff123" && txtPassword.Text == "123456")
             {
                 Bangdieukhien bdk = new Bangdieukhien("Staff");
                 bdk.Show();
@@ -39,5 +39,11 @@ namespace BanNuoc
             ds.Show();
             this.Hide();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+        
     }
 }
