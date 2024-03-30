@@ -12,8 +12,8 @@ namespace BanNuoc.AllUserControls
 {
     public partial class UC_Delete : UserControl
     {
-        Function fn = new Function();
-        string query;
+            Function fn = new Function();
+            string query;
         public UC_Delete()
         {
             InitializeComponent();

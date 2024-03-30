@@ -43,10 +43,6 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             label1 = new Label();
             MenuGridview = new Guna.UI2.WinForms.Guna2DataGridView();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
             label2 = new Label();
             label3 = new Label();
             txtCustomername = new Guna.UI2.WinForms.Guna2TextBox();
@@ -85,7 +81,6 @@
             MenuGridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             MenuGridview.ColumnHeadersHeight = 22;
             MenuGridview.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            MenuGridview.Columns.AddRange(new DataGridViewColumn[] { Column1, Column3, Column2, Column4 });
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = Color.White;
             dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
@@ -122,31 +117,8 @@
             MenuGridview.ThemeStyle.RowsStyle.Height = 29;
             MenuGridview.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             MenuGridview.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            MenuGridview.CellClick += MenuGridview_CellClick;
             MenuGridview.CellContentClick += guna2DataGridView1_CellContentClick;
-            // 
-            // Column1
-            // 
-            Column1.HeaderText = "Tên nước";
-            Column1.MinimumWidth = 6;
-            Column1.Name = "Column1";
-            // 
-            // Column3
-            // 
-            Column3.HeaderText = "Mã nước";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            // 
-            // Column2
-            // 
-            Column2.HeaderText = "Giá Nước";
-            Column2.MinimumWidth = 6;
-            Column2.Name = "Column2";
-            // 
-            // Column4
-            // 
-            Column4.HeaderText = "Loại nước";
-            Column4.MinimumWidth = 6;
-            Column4.Name = "Column4";
             // 
             // label2
             // 
@@ -272,6 +244,7 @@
             btnHoadon.Size = new Size(135, 56);
             btnHoadon.TabIndex = 10;
             btnHoadon.Text = "Thêm hóa đơn";
+            btnHoadon.Click += btnHoadon_Click;
             // 
             // txtQuantity
             // 
@@ -314,10 +287,6 @@
         private Label label1;
         private Guna.UI2.WinForms.Guna2DataGridView MenuGridview;
         private Label label2;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column3;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column4;
         private Label label3;
         private Guna.UI2.WinForms.Guna2TextBox txtCustomername;
         private Guna.UI2.WinForms.Guna2TextBox txtDrinkname;
