@@ -48,7 +48,7 @@ namespace BanNuoc
         private void Bangdieukhien_Load(object sender, EventArgs e)
         {
 
-
+            uC_Additem1.Visible = false;
 
 
         }
@@ -71,7 +71,8 @@ namespace BanNuoc
         }
         private void btnAdditems_Click(object sender, EventArgs e)
         {
-
+            uC_Additem1.Visible = true;
+            uC_Additem1.BringToFront();
         }
 
         private void uC_Welcome1_Load_1(object sender, EventArgs e)
@@ -80,6 +81,11 @@ namespace BanNuoc
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnAdditems_Click_1(object sender, EventArgs e)
         {
 
         }
