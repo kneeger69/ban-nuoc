@@ -87,6 +87,13 @@ namespace BanNuoc
 
         private void btnAdditems_Click_1(object sender, EventArgs e)
         {
+            uC_Additem1.Visible = true;
+            uC_Additem1 .BringToFront();
+
+        }
+
+        private void uC_Additem1_Load(object sender, EventArgs e)
+        {
 
         }
     }
