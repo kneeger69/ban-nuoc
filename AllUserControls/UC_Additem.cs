@@ -11,10 +11,16 @@ using System.Windows.Forms;
 namespace BanNuoc.AllUserControls
 {
     public partial class UC_Additem : UserControl
+
     {
+     
         public UC_Additem()
         {
             InitializeComponent();
+        }
+        private void UC_Additem_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void label1_Click(object sender, EventArgs e)

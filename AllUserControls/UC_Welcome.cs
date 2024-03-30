@@ -42,7 +42,7 @@ namespace BanNuoc.AllUserControls
             {
                 lblBanner.Location = new Point(98, 427);
                 lblBanner.ForeColor = Color.DarkCyan;
-                num++ ;
+                num++;
             }
             else if (num == 4)
             {
@@ -115,6 +115,11 @@ namespace BanNuoc.AllUserControls
         private void UC_Welcome_Load(object sender, EventArgs e)
         {
             timer1.Start();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

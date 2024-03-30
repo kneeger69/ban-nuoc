@@ -272,6 +272,7 @@
             uC_Additem1.Name = "uC_Additem1";
             uC_Additem1.Size = new Size(690, 696);
             uC_Additem1.TabIndex = 1;
+            uC_Additem1.Load += uC_Additem1_Load;
             // 
             // uC_Welcome1
             // 

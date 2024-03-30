@@ -16,5 +16,10 @@ namespace BanNuoc.AllUserControls
         {
             InitializeComponent();
         }
+
+        private void UC_Menu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

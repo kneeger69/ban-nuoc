@@ -40,23 +40,22 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.pexels_alleksana_7430733;
-            pictureBox1.Location = new Point(-4, -115);
-            pictureBox1.Margin = new Padding(4, 4, 4, 4);
+            pictureBox1.Location = new Point(-3, -92);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(866, 692);
+            pictureBox1.Size = new Size(693, 554);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Tahoma", 25F, FontStyle.Bold);
             label1.ForeColor = Color.FromArgb(64, 64, 64);
-            label1.Location = new Point(578, 398);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(462, 318);
             label1.Name = "label1";
-            label1.Size = new Size(87, 60);
+            label1.Size = new Size(74, 51);
             label1.TabIndex = 1;
             label1.Text = "To";
             // 
@@ -65,10 +64,9 @@
             lblBanner.AutoSize = true;
             lblBanner.Font = new Font("Tahoma", 30F, FontStyle.Bold);
             lblBanner.ForeColor = Color.FromArgb(64, 64, 64);
-            lblBanner.Location = new Point(22, 534);
-            lblBanner.Margin = new Padding(4, 0, 4, 0);
+            lblBanner.Location = new Point(18, 427);
             lblBanner.Name = "lblBanner";
-            lblBanner.Size = new Size(418, 72);
+            lblBanner.Size = new Size(349, 60);
             lblBanner.TabIndex = 2;
             lblBanner.Text = "MOOI Coffee";
             // 
@@ -85,15 +83,14 @@
             // 
             // UC_Welcome
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(221, 217, 214);
             Controls.Add(lblBanner);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
-            Margin = new Padding(4, 4, 4, 4);
             Name = "UC_Welcome";
-            Size = new Size(862, 692);
+            Size = new Size(690, 554);
             Load += UC_Welcome_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

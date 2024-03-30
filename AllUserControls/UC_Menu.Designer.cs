@@ -36,6 +36,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             Name = "UC_Menu";
             Size = new Size(785, 514);
+            Load += UC_Menu_Load;
             ResumeLayout(false);
         }
 

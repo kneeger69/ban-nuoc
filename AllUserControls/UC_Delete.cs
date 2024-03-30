@@ -16,5 +16,10 @@ namespace BanNuoc.AllUserControls
         {
             InitializeComponent();
         }
+
+        private void UC_Delete_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
