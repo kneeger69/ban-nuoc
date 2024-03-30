@@ -44,6 +44,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
             btnLogout = new LinkLabel();
+            uC_Delete1 = new AllUserControls.UC_Delete();
             guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             btnExit = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             btnDeleteitems = new Guna.UI2.WinForms.Guna2Button();
@@ -52,13 +53,12 @@
             btnGuestinfo = new Guna.UI2.WinForms.Guna2Button();
             btnPlaceorder = new Guna.UI2.WinForms.Guna2Button();
             panel2 = new Panel();
-            uC_Delete1 = new AllUserControls.UC_Delete();
+            uC_Menu1 = new AllUserControls.UC_Menu();
             uC_Additem1 = new AllUserControls.UC_Additem();
             uC_Welcome1 = new AllUserControls.UC_Welcome();
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
             guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(components);
             guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(components);
-            uC_Menu1 = new AllUserControls.UC_Menu();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -94,6 +94,14 @@
             btnLogout.TabStop = true;
             btnLogout.Text = "Đăng xuất";
             btnLogout.LinkClicked += btnLogout_LinkClicked;
+            // 
+            // uC_Delete1
+            // 
+            uC_Delete1.BackColor = Color.White;
+            uC_Delete1.Location = new Point(-13, -7);
+            uC_Delete1.Name = "uC_Delete1";
+            uC_Delete1.Size = new Size(862, 692);
+            uC_Delete1.TabIndex = 2;
             // 
             // guna2Button4
             // 
@@ -272,17 +280,16 @@
             panel2.Size = new Size(690, 554);
             panel2.TabIndex = 1;
             // 
-            // uC_Delete1
+            // uC_Menu1
             // 
-            uC_Delete1.BackColor = Color.White;
-            uC_Delete1.Location = new Point(0, -7);
-            uC_Delete1.Name = "uC_Delete1";
-            uC_Delete1.Size = new Size(862, 692);
-            uC_Delete1.TabIndex = 2;
+            uC_Menu1.Location = new Point(0, 0);
+            uC_Menu1.Name = "uC_Menu1";
+            uC_Menu1.Size = new Size(981, 642);
+            uC_Menu1.TabIndex = 9;
             // 
             // uC_Additem1
             // 
-            uC_Additem1.Location = new Point(0, 0);
+            uC_Additem1.Location = new Point(-3, -7);
             uC_Additem1.Name = "uC_Additem1";
             uC_Additem1.Size = new Size(690, 696);
             uC_Additem1.TabIndex = 1;
@@ -312,13 +319,6 @@
             // 
             guna2Elipse3.BorderRadius = 30;
             guna2Elipse3.TargetControl = panel2;
-            // 
-            // uC_Menu1
-            // 
-            uC_Menu1.Location = new Point(0, -7);
-            uC_Menu1.Name = "uC_Menu1";
-            uC_Menu1.Size = new Size(981, 642);
-            uC_Menu1.TabIndex = 9;
             // 
             // Bangdieukhien
             // 
