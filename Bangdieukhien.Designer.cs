@@ -53,6 +53,7 @@
             btnPlaceorder = new Guna.UI2.WinForms.Guna2Button();
             uC_Delete1 = new AllUserControls.UC_Delete();
             panel2 = new Panel();
+            uC_Khachhang1 = new AllUserControls.UC_Khachhang();
             uC_Inhoadon1 = new AllUserControls.UC_Inhoadon();
             uC_Menu1 = new AllUserControls.UC_Menu();
             uC_Additem1 = new AllUserControls.UC_Additem();
@@ -60,7 +61,7 @@
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
             guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(components);
             guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(components);
-            uC_Khachhang1 = new AllUserControls.UC_Khachhang();
+            uC_Sua1 = new AllUserControls.UC_Sua();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -188,6 +189,7 @@
             btnUpdateitems.Size = new Size(277, 51);
             btnUpdateitems.TabIndex = 4;
             btnUpdateitems.Text = "Sửa";
+            btnUpdateitems.Click += btnUpdateitems_Click;
             // 
             // btnAdditems
             // 
@@ -272,17 +274,10 @@
             uC_Delete1.Size = new Size(862, 692);
             uC_Delete1.TabIndex = 2;
             // 
-            // uC_Delete1
-            // 
-            uC_Delete1.BackColor = Color.White;
-            uC_Delete1.Location = new Point(-13, -7);
-            uC_Delete1.Name = "uC_Delete1";
-            uC_Delete1.Size = new Size(862, 692);
-            uC_Delete1.TabIndex = 2;
-            // 
             // panel2
             // 
             panel2.BackColor = SystemColors.ButtonFace;
+            panel2.Controls.Add(uC_Sua1);
             panel2.Controls.Add(uC_Khachhang1);
             panel2.Controls.Add(uC_Inhoadon1);
             panel2.Controls.Add(uC_Menu1);
@@ -293,6 +288,13 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(690, 554);
             panel2.TabIndex = 1;
+            // 
+            // uC_Khachhang1
+            // 
+            uC_Khachhang1.Location = new Point(-3, -7);
+            uC_Khachhang1.Name = "uC_Khachhang1";
+            uC_Khachhang1.Size = new Size(780, 731);
+            uC_Khachhang1.TabIndex = 9;
             // 
             // uC_Inhoadon1
             // 
@@ -341,12 +343,12 @@
             guna2Elipse3.BorderRadius = 30;
             guna2Elipse3.TargetControl = panel2;
             // 
-            // uC_Khachhang1
+            // uC_Sua1
             // 
-            uC_Khachhang1.Location = new Point(-3, -7);
-            uC_Khachhang1.Name = "uC_Khachhang1";
-            uC_Khachhang1.Size = new Size(888, 731);
-            uC_Khachhang1.TabIndex = 9;
+            uC_Sua1.Location = new Point(-33, -29);
+            uC_Sua1.Name = "uC_Sua1";
+            uC_Sua1.Size = new Size(958, 838);
+            uC_Sua1.TabIndex = 10;
             // 
             // Bangdieukhien
             // 
@@ -387,5 +389,6 @@
         private AllUserControls.UC_Menu uC_Menu1;
         private AllUserControls.UC_Inhoadon uC_Inhoadon1;
         private AllUserControls.UC_Khachhang uC_Khachhang1;
+        private AllUserControls.UC_Sua uC_Sua1;
     }
 }
