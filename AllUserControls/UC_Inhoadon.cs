@@ -25,7 +25,7 @@ namespace BanNuoc.AllUserControls
             try
             {
                 string tenKhachHang = guna2TextBox1.Text.Trim();
-                string query = "SELECT TENKH, TENNUOC, SOLUONG, GIANUOC FROM HOADONGIA WHERE TENKH LIKE '%" + tenKhachHang + "%'";
+                query = "SELECT TENKH, TENNUOC, SOLUONG, DONGIA FROM HOADONGIA WHERE TENKH LIKE '%" + tenKhachHang + "%'";
                 DataSet ds = fn.getData(query);
 
                 // Tính toán THANHTIEN
@@ -35,7 +35,7 @@ namespace BanNuoc.AllUserControls
                 foreach (DataRow row in ds.Tables[0].Rows)
                 {
                     int soLuong = Convert.ToInt32(row["SOLUONG"]);
-                    int donGia = Convert.ToInt32(row["GIANUOC"]);
+                    int donGia = Convert.ToInt32(row["DONGIA"]);
                     int thanhTien = soLuong * donGia;
                     row["THANHTIEN"] = thanhTien;
                 }
@@ -49,7 +49,7 @@ namespace BanNuoc.AllUserControls
         }
         private void LoadTotalData()
         {
-            string query = "SELECT TENKH, TENNUOC, SOLUONG, GIANUOC FROM HOADONGIA";
+            string query = "SELECT TENKH, TENNUOC, SOLUONG, DONGIA FROM HOADONGIA";
             DataSet ds = fn.getTotalData(query);
             guna2DataGridView1.DataSource = ds.Tables[0];
 
@@ -58,7 +58,7 @@ namespace BanNuoc.AllUserControls
             foreach (DataRow row in ds.Tables[0].Rows)
             {
                 int soLuong = Convert.ToInt32(row["SOLUONG"]);
-                int donGia = Convert.ToInt32(row["GIANUOC"]);
+                int donGia = Convert.ToInt32(row["DONGIA"]);
                 int thanhTien = soLuong * donGia;
                 row["THANHTIEN"] = thanhTien;
             }

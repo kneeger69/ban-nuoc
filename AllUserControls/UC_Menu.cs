@@ -28,7 +28,7 @@ namespace BanNuoc.AllUserControls
             try
             {
                 // Thực hiện truy vấn SQL để lấy thông tin từ bảng NUOC
-                string query = "SELECT * FROM NUOC";
+                query = "SELECT * FROM NUOC";
                 DataSet ds = fn.getData(query);
                 MenuGridview.DataSource = ds.Tables[0];
             }
@@ -79,7 +79,7 @@ namespace BanNuoc.AllUserControls
                 int donGia = int.Parse(txtPrice.Text); // Chuyển đổi từ string sang int
 
                 // Tạo câu lệnh SQL để chèn dữ liệu vào bảng HOADONGIA
-                string query = string.Format("INSERT INTO HOADONGIA (TENKH, TENNUOC, SOLUONG, GIANUOC) VALUES ('{0}', '{1}', {2}, {3})", tenKhachHang, tenNuoc, soLuong, donGia);
+                string query = string.Format("INSERT INTO HOADONGIA (TENKH, TENNUOC, SOLUONG, DONGIA) VALUES ('{0}', '{1}', {2}, {3})", tenKhachHang, tenNuoc, soLuong, donGia);
 
                 // Thực thi câu lệnh SQL
                 fn.setData(query);

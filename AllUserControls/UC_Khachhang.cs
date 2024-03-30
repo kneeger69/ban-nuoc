@@ -21,7 +21,7 @@ namespace BanNuoc.AllUserControls
         }
         private void LoadTotalData()
         {
-            string query = "SELECT * FROM KHACHHANG";
+            query = "SELECT * FROM KHACHHANG";
             DataSet ds = fn.getTotalData(query);
             guna2DataGridView1.DataSource = ds.Tables[0];
         }
