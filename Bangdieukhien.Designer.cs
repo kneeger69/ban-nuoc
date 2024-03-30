@@ -44,7 +44,6 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
             btnLogout = new LinkLabel();
-            uC_Delete1 = new AllUserControls.UC_Delete();
             guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             btnExit = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             btnDeleteitems = new Guna.UI2.WinForms.Guna2Button();
@@ -52,6 +51,7 @@
             btnAdditems = new Guna.UI2.WinForms.Guna2Button();
             btnGuestinfo = new Guna.UI2.WinForms.Guna2Button();
             btnPlaceorder = new Guna.UI2.WinForms.Guna2Button();
+            uC_Delete1 = new AllUserControls.UC_Delete();
             panel2 = new Panel();
             uC_Menu1 = new AllUserControls.UC_Menu();
             uC_Additem1 = new AllUserControls.UC_Additem();
@@ -94,14 +94,6 @@
             btnLogout.TabStop = true;
             btnLogout.Text = "Đăng xuất";
             btnLogout.LinkClicked += btnLogout_LinkClicked;
-            // 
-            // uC_Delete1
-            // 
-            uC_Delete1.BackColor = Color.White;
-            uC_Delete1.Location = new Point(-13, -7);
-            uC_Delete1.Name = "uC_Delete1";
-            uC_Delete1.Size = new Size(862, 692);
-            uC_Delete1.TabIndex = 2;
             // 
             // guna2Button4
             // 
@@ -267,6 +259,14 @@
             btnPlaceorder.Size = new Size(277, 51);
             btnPlaceorder.TabIndex = 0;
             btnPlaceorder.Text = "In hóa đơn";
+            // 
+            // uC_Delete1
+            // 
+            uC_Delete1.BackColor = Color.White;
+            uC_Delete1.Location = new Point(-13, -7);
+            uC_Delete1.Name = "uC_Delete1";
+            uC_Delete1.Size = new Size(862, 692);
+            uC_Delete1.TabIndex = 2;
             // 
             // panel2
             // 
