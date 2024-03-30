@@ -31,21 +31,24 @@
             components = new System.ComponentModel.Container();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
             label2 = new Label();
-            guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            txtdrinkSearch = new Guna.UI2.WinForms.Guna2TextBox();
+            delGridview = new Guna.UI2.WinForms.Guna2DataGridView();
+            txtcustomerSearch = new Guna.UI2.WinForms.Guna2TextBox();
             label1 = new Label();
-            btnXoa = new Guna.UI2.WinForms.Guna2Button();
-            ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).BeginInit();
+            btnDrinkinfo = new Guna.UI2.WinForms.Guna2Button();
+            btnCustomerinfo = new Guna.UI2.WinForms.Guna2Button();
+            ((System.ComponentModel.ISupportInitialize)delGridview).BeginInit();
             SuspendLayout();
             // 
             // guna2Elipse1
@@ -62,106 +65,109 @@
             label2.TabIndex = 1;
             label2.Text = "Nhập mã đồ uống";
             // 
-            // guna2TextBox1
+            // txtdrinkSearch
             // 
-            guna2TextBox1.BorderColor = Color.Black;
-            guna2TextBox1.CustomizableEdges = customizableEdges7;
-            guna2TextBox1.DefaultText = "";
-            guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Font = new Font("Segoe UI", 9F);
-            guna2TextBox1.ForeColor = Color.Black;
-            guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Location = new Point(31, 153);
-            guna2TextBox1.Margin = new Padding(3, 4, 3, 4);
-            guna2TextBox1.Name = "guna2TextBox1";
-            guna2TextBox1.PasswordChar = '\0';
-            guna2TextBox1.PlaceholderText = "Nhập vào đồ uống...";
-            guna2TextBox1.SelectedText = "";
-            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2TextBox1.Size = new Size(273, 43);
-            guna2TextBox1.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            guna2TextBox1.TabIndex = 2;
+            txtdrinkSearch.BorderColor = Color.Black;
+            txtdrinkSearch.CustomizableEdges = customizableEdges7;
+            txtdrinkSearch.DefaultText = "";
+            txtdrinkSearch.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtdrinkSearch.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtdrinkSearch.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtdrinkSearch.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtdrinkSearch.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtdrinkSearch.Font = new Font("Segoe UI", 9F);
+            txtdrinkSearch.ForeColor = Color.Black;
+            txtdrinkSearch.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtdrinkSearch.Location = new Point(31, 153);
+            txtdrinkSearch.Margin = new Padding(3, 4, 3, 4);
+            txtdrinkSearch.Name = "txtdrinkSearch";
+            txtdrinkSearch.PasswordChar = '\0';
+            txtdrinkSearch.PlaceholderText = "Nhập mã đồ uống...";
+            txtdrinkSearch.SelectedText = "";
+            txtdrinkSearch.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            txtdrinkSearch.Size = new Size(273, 43);
+            txtdrinkSearch.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            txtdrinkSearch.TabIndex = 2;
+            txtdrinkSearch.TextChanged += txtdrinkSearch_TextChanged;
             // 
-            // guna2DataGridView1
+            // delGridview
             // 
-            dataGridViewCellStyle4.BackColor = Color.White;
-            guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            guna2DataGridView1.BorderStyle = BorderStyle.Fixed3D;
-            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = Color.FromArgb(100, 88, 255);
-            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle5.ForeColor = Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
-            guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            guna2DataGridView1.ColumnHeadersHeight = 4;
-            guna2DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = Color.White;
-            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle6.ForeColor = Color.FromArgb(71, 69, 94);
-            dataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            dataGridViewCellStyle6.SelectionForeColor = Color.FromArgb(71, 69, 94);
-            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
-            guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
-            guna2DataGridView1.EditMode = DataGridViewEditMode.EditProgrammatically;
-            guna2DataGridView1.GridColor = Color.FromArgb(231, 229, 255);
-            guna2DataGridView1.Location = new Point(31, 234);
-            guna2DataGridView1.Name = "guna2DataGridView1";
-            guna2DataGridView1.RowHeadersVisible = false;
-            guna2DataGridView1.RowHeadersWidth = 51;
-            guna2DataGridView1.Size = new Size(629, 252);
-            guna2DataGridView1.TabIndex = 3;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
-            guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
-            guna2DataGridView1.ThemeStyle.BackColor = Color.White;
-            guna2DataGridView1.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
-            guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
-            guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
-            guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F);
-            guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = Color.White;
-            guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = Color.White;
-            guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            guna2DataGridView1.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F);
-            guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(71, 69, 94);
-            guna2DataGridView1.ThemeStyle.RowsStyle.Height = 29;
-            guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle1.BackColor = Color.White;
+            delGridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            delGridview.BorderStyle = BorderStyle.Fixed3D;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            delGridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            delGridview.ColumnHeadersHeight = 4;
+            delGridview.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.White;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            delGridview.DefaultCellStyle = dataGridViewCellStyle3;
+            delGridview.EditMode = DataGridViewEditMode.EditProgrammatically;
+            delGridview.GridColor = Color.FromArgb(231, 229, 255);
+            delGridview.Location = new Point(31, 234);
+            delGridview.Name = "delGridview";
+            delGridview.RowHeadersVisible = false;
+            delGridview.RowHeadersWidth = 51;
+            delGridview.Size = new Size(629, 252);
+            delGridview.TabIndex = 3;
+            delGridview.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
+            delGridview.ThemeStyle.AlternatingRowsStyle.Font = null;
+            delGridview.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
+            delGridview.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
+            delGridview.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
+            delGridview.ThemeStyle.BackColor = Color.White;
+            delGridview.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
+            delGridview.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
+            delGridview.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
+            delGridview.ThemeStyle.HeaderStyle.Font = new Font("Segoe UI", 9F);
+            delGridview.ThemeStyle.HeaderStyle.ForeColor = Color.White;
+            delGridview.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            delGridview.ThemeStyle.HeaderStyle.Height = 4;
+            delGridview.ThemeStyle.ReadOnly = false;
+            delGridview.ThemeStyle.RowsStyle.BackColor = Color.White;
+            delGridview.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            delGridview.ThemeStyle.RowsStyle.Font = new Font("Segoe UI", 9F);
+            delGridview.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(71, 69, 94);
+            delGridview.ThemeStyle.RowsStyle.Height = 29;
+            delGridview.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            delGridview.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            delGridview.CellClick += delGridview_CellClick;
             // 
-            // guna2TextBox2
+            // txtcustomerSearch
             // 
-            guna2TextBox2.BorderColor = Color.Black;
-            guna2TextBox2.CustomizableEdges = customizableEdges9;
-            guna2TextBox2.DefaultText = "";
-            guna2TextBox2.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox2.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox2.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox2.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox2.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox2.Font = new Font("Segoe UI", 9F);
-            guna2TextBox2.ForeColor = Color.Black;
-            guna2TextBox2.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox2.Location = new Point(387, 153);
-            guna2TextBox2.Margin = new Padding(3, 4, 3, 4);
-            guna2TextBox2.Name = "guna2TextBox2";
-            guna2TextBox2.PasswordChar = '\0';
-            guna2TextBox2.PlaceholderText = "Nhập mã khách hàng...";
-            guna2TextBox2.SelectedText = "";
-            guna2TextBox2.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            guna2TextBox2.Size = new Size(273, 43);
-            guna2TextBox2.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            guna2TextBox2.TabIndex = 6;
+            txtcustomerSearch.BorderColor = Color.Black;
+            txtcustomerSearch.CustomizableEdges = customizableEdges5;
+            txtcustomerSearch.DefaultText = "";
+            txtcustomerSearch.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtcustomerSearch.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtcustomerSearch.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtcustomerSearch.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtcustomerSearch.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtcustomerSearch.Font = new Font("Segoe UI", 9F);
+            txtcustomerSearch.ForeColor = Color.Black;
+            txtcustomerSearch.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtcustomerSearch.Location = new Point(387, 153);
+            txtcustomerSearch.Margin = new Padding(3, 4, 3, 4);
+            txtcustomerSearch.Name = "txtcustomerSearch";
+            txtcustomerSearch.PasswordChar = '\0';
+            txtcustomerSearch.PlaceholderText = "Nhập mã khách hàng...";
+            txtcustomerSearch.SelectedText = "";
+            txtcustomerSearch.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            txtcustomerSearch.Size = new Size(273, 43);
+            txtcustomerSearch.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            txtcustomerSearch.TabIndex = 6;
+            txtcustomerSearch.TextChanged += txtcustomerSearch_TextChanged;
             // 
             // label1
             // 
@@ -173,38 +179,59 @@
             label1.TabIndex = 7;
             label1.Text = "Nhập mã khách hàng";
             // 
-            // btnXoa
+            // btnDrinkinfo
             // 
-            btnXoa.BorderRadius = 30;
-            btnXoa.CustomizableEdges = customizableEdges11;
-            btnXoa.DisabledState.BorderColor = Color.DarkGray;
-            btnXoa.DisabledState.CustomBorderColor = Color.DarkGray;
-            btnXoa.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btnXoa.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnXoa.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnXoa.ForeColor = Color.White;
-            btnXoa.Location = new Point(535, 492);
-            btnXoa.Name = "btnXoa";
-            btnXoa.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            btnXoa.Size = new Size(125, 56);
-            btnXoa.TabIndex = 8;
-            btnXoa.Text = "Xóa";
+            btnDrinkinfo.BorderRadius = 18;
+            btnDrinkinfo.CustomizableEdges = customizableEdges3;
+            btnDrinkinfo.DisabledState.BorderColor = Color.DarkGray;
+            btnDrinkinfo.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnDrinkinfo.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnDrinkinfo.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnDrinkinfo.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
+            btnDrinkinfo.ForeColor = Color.White;
+            btnDrinkinfo.Location = new Point(182, 492);
+            btnDrinkinfo.Name = "btnDrinkinfo";
+            btnDrinkinfo.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btnDrinkinfo.Size = new Size(122, 36);
+            btnDrinkinfo.TabIndex = 9;
+            btnDrinkinfo.Text = "Đồ uống";
+            btnDrinkinfo.Click += btnDrinkinfo_Click;
+            // 
+            // btnCustomerinfo
+            // 
+            btnCustomerinfo.BorderRadius = 18;
+            btnCustomerinfo.CustomizableEdges = customizableEdges1;
+            btnCustomerinfo.DisabledState.BorderColor = Color.DarkGray;
+            btnCustomerinfo.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnCustomerinfo.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnCustomerinfo.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnCustomerinfo.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
+            btnCustomerinfo.ForeColor = Color.White;
+            btnCustomerinfo.Location = new Point(387, 492);
+            btnCustomerinfo.Name = "btnCustomerinfo";
+            btnCustomerinfo.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnCustomerinfo.Size = new Size(122, 36);
+            btnCustomerinfo.TabIndex = 10;
+            btnCustomerinfo.Text = "Khách hàng";
+            btnCustomerinfo.Click += btnCustomerinfo_Click;
             // 
             // UC_Delete
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            Controls.Add(btnXoa);
+            Controls.Add(btnCustomerinfo);
+            Controls.Add(btnDrinkinfo);
             Controls.Add(label1);
-            Controls.Add(guna2TextBox2);
-            Controls.Add(guna2DataGridView1);
-            Controls.Add(guna2TextBox1);
+            Controls.Add(txtcustomerSearch);
+            Controls.Add(delGridview);
+            Controls.Add(txtdrinkSearch);
             Controls.Add(label2);
             Name = "UC_Delete";
             Size = new Size(690, 554);
             Load += UC_Delete_Load;
-            ((System.ComponentModel.ISupportInitialize)guna2DataGridView1).EndInit();
+            Enter += UC_Delete_Enter;
+            ((System.ComponentModel.ISupportInitialize)delGridview).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -212,11 +239,12 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txtdrinkSearch;
         private Label label2;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2DataGridView delGridview;
+        private Guna.UI2.WinForms.Guna2TextBox txtcustomerSearch;
         private Label label1;
-        private Guna.UI2.WinForms.Guna2Button btnXoa;
+        private Guna.UI2.WinForms.Guna2Button btnCustomerinfo;
+        private Guna.UI2.WinForms.Guna2Button btnDrinkinfo;
     }
 }
