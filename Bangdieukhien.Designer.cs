@@ -52,6 +52,7 @@
             btnGuestinfo = new Guna.UI2.WinForms.Guna2Button();
             btnPlaceorder = new Guna.UI2.WinForms.Guna2Button();
             panel2 = new Panel();
+            uC_Additem1 = new AllUserControls.UC_Additem();
             uC_Welcome1 = new AllUserControls.UC_Welcome();
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
             guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(components);
@@ -75,6 +76,7 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(286, 554);
             panel1.TabIndex = 0;
+            panel1.Paint += panel1_Paint;
             // 
             // btnLogout
             // 
@@ -204,6 +206,7 @@
             btnAdditems.Size = new Size(277, 51);
             btnAdditems.TabIndex = 3;
             btnAdditems.Text = "Thêm";
+            btnAdditems.Click += btnAdditems_Click_1;
             // 
             // btnGuestinfo
             // 
@@ -256,19 +259,29 @@
             // panel2
             // 
             panel2.BackColor = SystemColors.ButtonFace;
+            panel2.Controls.Add(uC_Additem1);
             panel2.Controls.Add(uC_Welcome1);
             panel2.Location = new Point(308, 19);
             panel2.Name = "panel2";
             panel2.Size = new Size(690, 554);
             panel2.TabIndex = 1;
             // 
+            // uC_Additem1
+            // 
+            uC_Additem1.Location = new Point(0, 0);
+            uC_Additem1.Name = "uC_Additem1";
+            uC_Additem1.Size = new Size(690, 696);
+            uC_Additem1.TabIndex = 1;
+            // 
             // uC_Welcome1
             // 
             uC_Welcome1.BackColor = Color.FromArgb(221, 217, 214);
-            uC_Welcome1.Location = new Point(0, -7);
+            uC_Welcome1.Location = new Point(0, 0);
+            uC_Welcome1.Margin = new Padding(4);
             uC_Welcome1.Name = "uC_Welcome1";
-            uC_Welcome1.Size = new Size(862, 692);
+            uC_Welcome1.Size = new Size(703, 569);
             uC_Welcome1.TabIndex = 0;
+            uC_Welcome1.Load += uC_Welcome1_Load_1;
             // 
             // guna2Elipse1
             // 
@@ -319,5 +332,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         private AllUserControls.UC_Welcome uC_Welcome1;
+        private AllUserControls.UC_Additem uC_Additem1;
     }
 }

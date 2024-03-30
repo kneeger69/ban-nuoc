@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BanNuoc.AllUserControls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,7 +28,7 @@ namespace BanNuoc
                 btnUpdateitems.Hide();
                 btnGuestinfo.Hide();
             }
-            else if(user == "Admin")
+            else if (user == "Admin")
             {
                 btnPlaceorder.Show();
                 btnAdditems.Show();
@@ -47,6 +48,9 @@ namespace BanNuoc
         private void Bangdieukhien_Load(object sender, EventArgs e)
         {
 
+            uC_Additem1.Visible = false;
+
+
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -59,6 +63,31 @@ namespace BanNuoc
             Form1 fm = new Form1();
             this.Hide();
             fm.Show();
+        }
+
+        private void uC_Welcome1_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void btnAdditems_Click(object sender, EventArgs e)
+        {
+            uC_Additem1.Visible = true;
+            uC_Additem1.BringToFront();
+        }
+
+        private void uC_Welcome1_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnAdditems_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
