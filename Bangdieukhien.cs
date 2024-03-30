@@ -51,6 +51,7 @@ namespace BanNuoc
             uC_Additem1.Visible = false;
             uC_Delete1.Visible = false;
             uC_Menu1.Visible = false;
+            uC_Inhoadon1.Visible = false;
 
         }
 
@@ -109,6 +110,17 @@ namespace BanNuoc
         {
             uC_Menu1.Visible = true;
             uC_Menu1.BringToFront();
+        }
+
+        private void uC_Inhoadon1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPlaceorder_Click(object sender, EventArgs e)
+        {
+            uC_Inhoadon1.Visible = true;
+            uC_Inhoadon1.BringToFront();
         }
     }
 }
