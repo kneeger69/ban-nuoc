@@ -49,7 +49,8 @@ namespace BanNuoc
         {
 
             uC_Additem1.Visible = false;
-
+            uC_Delete1.Visible = false;
+            uC_Menu1.Visible = false;
 
         }
 
@@ -88,13 +89,26 @@ namespace BanNuoc
         private void btnAdditems_Click_1(object sender, EventArgs e)
         {
             uC_Additem1.Visible = true;
-            uC_Additem1 .BringToFront();
+            uC_Additem1.BringToFront();
 
         }
 
         private void uC_Additem1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnDeleteitems_Click(object sender, EventArgs e)
+        {
+            uC_Delete1.Visible = true;
+            uC_Delete1.BringToFront();
+
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            uC_Menu1.Visible = true;
+            uC_Menu1.BringToFront();
         }
     }
 }
