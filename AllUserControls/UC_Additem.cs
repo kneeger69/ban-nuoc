@@ -13,7 +13,9 @@ namespace BanNuoc.AllUserControls
     public partial class UC_Additem : UserControl
 
     {
-     
+        Function fn = new Function();
+        string query;
+
         public UC_Additem()
         {
             InitializeComponent();
@@ -23,7 +25,7 @@ namespace BanNuoc.AllUserControls
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+ /*       private void label1_Click(object sender, EventArgs e)
         {
 
         }
@@ -46,6 +48,20 @@ namespace BanNuoc.AllUserControls
         private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }*/
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            query = "insert into NUOC(MANUOC, TENNUOC, LOAINUOC, DONGIA) values ('" +txtManuoc.Text+"','"+txtTenuoc.Text+"','" +txtLoainuoc.Text+"','"+txtGia.Text+"')";
+            fn.setData(query);
+            clearALL();
+        }
+        public void clearALL()
+        {
+            txtManuoc.Clear();
+            txtLoainuoc.SelectedIndex = -1;
+            txtTenuoc.Clear();
+            txtGia.Clear();
         }
     }
 }
