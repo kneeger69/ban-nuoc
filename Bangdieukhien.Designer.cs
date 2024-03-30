@@ -52,11 +52,13 @@
             btnGuestinfo = new Guna.UI2.WinForms.Guna2Button();
             btnPlaceorder = new Guna.UI2.WinForms.Guna2Button();
             panel2 = new Panel();
+            uC_Delete1 = new AllUserControls.UC_Delete();
             uC_Additem1 = new AllUserControls.UC_Additem();
             uC_Welcome1 = new AllUserControls.UC_Welcome();
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
             guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(components);
             guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(components);
+            uC_Menu1 = new AllUserControls.UC_Menu();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -116,6 +118,7 @@
             guna2Button4.Size = new Size(277, 51);
             guna2Button4.TabIndex = 7;
             guna2Button4.Text = "Danh mục đồ uống";
+            guna2Button4.Click += guna2Button4_Click;
             // 
             // btnExit
             // 
@@ -158,6 +161,7 @@
             btnDeleteitems.Size = new Size(277, 51);
             btnDeleteitems.TabIndex = 5;
             btnDeleteitems.Text = "Xóa";
+            btnDeleteitems.Click += btnDeleteitems_Click;
             // 
             // btnUpdateitems
             // 
@@ -259,12 +263,22 @@
             // panel2
             // 
             panel2.BackColor = SystemColors.ButtonFace;
+            panel2.Controls.Add(uC_Menu1);
+            panel2.Controls.Add(uC_Delete1);
             panel2.Controls.Add(uC_Additem1);
             panel2.Controls.Add(uC_Welcome1);
             panel2.Location = new Point(308, 19);
             panel2.Name = "panel2";
             panel2.Size = new Size(690, 554);
             panel2.TabIndex = 1;
+            // 
+            // uC_Delete1
+            // 
+            uC_Delete1.BackColor = Color.White;
+            uC_Delete1.Location = new Point(0, -7);
+            uC_Delete1.Name = "uC_Delete1";
+            uC_Delete1.Size = new Size(862, 692);
+            uC_Delete1.TabIndex = 2;
             // 
             // uC_Additem1
             // 
@@ -298,6 +312,13 @@
             // 
             guna2Elipse3.BorderRadius = 30;
             guna2Elipse3.TargetControl = panel2;
+            // 
+            // uC_Menu1
+            // 
+            uC_Menu1.Location = new Point(0, -7);
+            uC_Menu1.Name = "uC_Menu1";
+            uC_Menu1.Size = new Size(981, 642);
+            uC_Menu1.TabIndex = 9;
             // 
             // Bangdieukhien
             // 
@@ -334,5 +355,7 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         private AllUserControls.UC_Welcome uC_Welcome1;
         private AllUserControls.UC_Additem uC_Additem1;
+        private AllUserControls.UC_Delete uC_Delete1;
+        private AllUserControls.UC_Menu uC_Menu1;
     }
 }
