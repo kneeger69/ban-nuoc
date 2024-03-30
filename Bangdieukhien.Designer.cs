@@ -272,6 +272,14 @@
             uC_Delete1.Size = new Size(862, 692);
             uC_Delete1.TabIndex = 2;
             // 
+            // uC_Delete1
+            // 
+            uC_Delete1.BackColor = Color.White;
+            uC_Delete1.Location = new Point(-13, -7);
+            uC_Delete1.Name = "uC_Delete1";
+            uC_Delete1.Size = new Size(862, 692);
+            uC_Delete1.TabIndex = 2;
+            // 
             // panel2
             // 
             panel2.BackColor = SystemColors.ButtonFace;

@@ -73,7 +73,6 @@
             label2.Size = new Size(84, 25);
             label2.TabIndex = 1;
             label2.Text = "Mã nước";
-
             // 
             // label3
             // 
@@ -84,7 +83,6 @@
             label3.Size = new Size(92, 25);
             label3.TabIndex = 2;
             label3.Text = "Loại nước";
-
             // 
             // label4
             // 
@@ -188,13 +186,13 @@
             txtLoainuoc.Font = new Font("Segoe UI", 10F);
             txtLoainuoc.ForeColor = Color.FromArgb(68, 88, 112);
             txtLoainuoc.ItemHeight = 30;
-            txtLoainuoc.Items.AddRange(new object[] { "Suối", "Ngọt", "Trái Cây" });
+            txtLoainuoc.Items.AddRange(new object[] { "Nuoc suoi", "Nuoc ngot", "Trai cay", "Coffee", "Tra sua " });
             txtLoainuoc.Location = new Point(59, 283);
             txtLoainuoc.Name = "txtLoainuoc";
+            txtLoainuoc.RightToLeft = RightToLeft.No;
             txtLoainuoc.ShadowDecoration.CustomizableEdges = customizableEdges8;
             txtLoainuoc.Size = new Size(232, 36);
             txtLoainuoc.TabIndex = 11;
-/*            txtLoainuoc.SelectedIndexChanged += guna2ComboBox1_SelectedIndexChanged;*/
             // 
             // txtGia
             // 
