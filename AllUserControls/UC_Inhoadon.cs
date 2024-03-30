@@ -12,14 +12,58 @@ namespace BanNuoc.AllUserControls
 {
     public partial class UC_Inhoadon : UserControl
     {
+        Function fn = new Function();
+        string query;
         public UC_Inhoadon()
         {
             InitializeComponent();
+            LoadTotalData();
         }
 
         private void btnThemHoadon_Click(object sender, EventArgs e)
         {
+            try
+            {
+                string tenKhachHang = guna2TextBox1.Text.Trim();
+                string query = "SELECT TENKH, TENNUOC, SOLUONG, GIANUOC FROM HOADONGIA WHERE TENKH LIKE '%" + tenKhachHang + "%'";
+                DataSet ds = fn.getData(query);
 
+                // Tính toán THANHTIEN
+                DataColumn thanhTienColumn = new DataColumn("THANHTIEN", typeof(int));
+                ds.Tables[0].Columns.Add(thanhTienColumn);
+
+                foreach (DataRow row in ds.Tables[0].Rows)
+                {
+                    int soLuong = Convert.ToInt32(row["SOLUONG"]);
+                    int donGia = Convert.ToInt32(row["GIANUOC"]);
+                    int thanhTien = soLuong * donGia;
+                    row["THANHTIEN"] = thanhTien;
+                }
+
+                guna2DataGridView1.DataSource = ds.Tables[0];
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void LoadTotalData()
+        {
+            string query = "SELECT TENKH, TENNUOC, SOLUONG, GIANUOC FROM HOADONGIA";
+            DataSet ds = fn.getTotalData(query);
+            guna2DataGridView1.DataSource = ds.Tables[0];
+
+            DataColumn thanhTienColumn = new DataColumn("THANHTIEN", typeof(int));
+            ds.Tables[0].Columns.Add(thanhTienColumn);
+            foreach (DataRow row in ds.Tables[0].Rows)
+            {
+                int soLuong = Convert.ToInt32(row["SOLUONG"]);
+                int donGia = Convert.ToInt32(row["GIANUOC"]);
+                int thanhTien = soLuong * donGia;
+                row["THANHTIEN"] = thanhTien;
+            }
+
+            guna2DataGridView1.DataSource = ds.Tables[0];
         }
     }
 }

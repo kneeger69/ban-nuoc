@@ -53,6 +53,7 @@ namespace BanNuoc
             uC_Menu1.Visible = false;
             uC_Inhoadon1.Visible = false;
             uC_Khachhang1.Visible = false;
+            uC_Sua1.Visible = false;
 
         }
 
@@ -129,6 +130,12 @@ namespace BanNuoc
             uC_Khachhang1.Visible = true;
             uC_Khachhang1.BringToFront();
 
+        }
+
+        private void btnUpdateitems_Click(object sender, EventArgs e)
+        {
+            uC_Sua1.Visible = true;
+            uC_Sua1.BringToFront();
         }
     }
 }
